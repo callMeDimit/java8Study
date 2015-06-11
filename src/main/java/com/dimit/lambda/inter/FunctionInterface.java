@@ -10,6 +10,12 @@ package com.dimit.lambda.inter;
  */
 @FunctionalInterface
 public interface FunctionInterface {
+	/**
+	 * 唯一抽象方法
+	 * @param a 
+	 * @param b
+	 * @return
+	 */
 	boolean test(int a, int b);
 	
 	/**

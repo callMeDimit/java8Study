@@ -55,7 +55,7 @@ public class LambdaTest {
 	 */
 	@Test
 	public void functionIntefaceTest() {
-		int aa = 6;
+		int aa = 7;
 		int bb = 6;
 		FunctionInterfaceClz clz = new FunctionInterfaceClz(aa, bb);
 		boolean result = clz.excute((a, b) -> a > b ? true : false);
