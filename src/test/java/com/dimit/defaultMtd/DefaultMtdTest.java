@@ -9,7 +9,9 @@ public class DefaultMtdTest {
 	 */
 	@Test
 	public void test() {
-		DefaultableImpl impl = new DefaultableImpl();
+		Defaulable impl = Defaulable.create(()->{
+			return new DefaultableImpl();
+		});
 		System.out.println(impl.notRequired());
 	}
 	
@@ -18,7 +20,9 @@ public class DefaultMtdTest {
 	 */
 	@Test
 	public void overrideTest() {
-		OverridableImpl impl = new OverridableImpl();
+		Defaulable impl = Defaulable.create(()->{
+			return new OverridableImpl();
+		});
 		System.out.println(impl.notRequired());
 	}
 
@@ -27,8 +31,10 @@ public class DefaultMtdTest {
 	 */
 	@Test
 	public void inheritanceTest() {
-		SonInterfaceImpl sonInterface = new SonInterfaceImpl();
-		System.out.println(sonInterface.notRequired());
+		Defaulable impl = Defaulable.create(()->{
+			return new SonInterfaceImpl();
+		});
+		System.out.println(impl.notRequired());
 	}
 	
 }
