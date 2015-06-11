@@ -8,7 +8,7 @@ import org.junit.Test;
 import com.dimit.lambda.clz.FunctionInterfaceClz;
 
 public class LambdaTest {
-
+	private String member = "DDDD";
 	@Test
 	public void test() {
 		Arrays.asList("a", "b", "d").forEach(e -> System.out.println(e));
@@ -28,7 +28,9 @@ public class LambdaTest {
 	public void localVariableTest() {
 		String separator = ",";
 		Arrays.asList("a", "b", "d").forEach(e -> {
-			System.out.print(e + separator);
+//			separator = "sss";  //局部变量编译时自动转换为final类型 不能修改
+			member = "AAAA";
+			System.out.print(e + separator + member);
 		});
 	}
 
@@ -61,5 +63,4 @@ public class LambdaTest {
 		boolean result = clz.excute((a, b) -> a > b ? true : false);
 		System.out.println(result);
 	}
-
 }
