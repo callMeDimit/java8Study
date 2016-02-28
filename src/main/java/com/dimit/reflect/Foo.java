@@ -1,5 +1,6 @@
 package com.dimit.reflect;
 
+@SuppressWarnings("unused")
 public class Foo {
 	private String name;
 	private int age;

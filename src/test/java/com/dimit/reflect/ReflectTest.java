@@ -6,11 +6,8 @@ import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Method;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Enumeration;
 import java.util.List;
-
-import javax.swing.plaf.synth.SynthSeparatorUI;
 
 import org.junit.Before;
 import org.junit.Test;

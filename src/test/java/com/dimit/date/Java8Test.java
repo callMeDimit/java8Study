@@ -18,7 +18,7 @@ import java.time.temporal.IsoFields;
 import java.util.Date;
 
 import org.junit.Test;
-
+@SuppressWarnings("unused")
 public class Java8Test {
 
 	/**
@@ -200,6 +200,7 @@ public class Java8Test {
 	 * java8对其他历法的支持
 	 */
 	@Test
+	@SuppressWarnings("rawtypes")
 	public void testChronology() {
 		// 提供对java.util.Calendar的替换，提供对年历系统的支持
 		Chronology c = HijrahChronology.INSTANCE;
