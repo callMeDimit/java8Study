@@ -44,6 +44,10 @@ public class BaseOrder<M extends Object & Serializable,N extends Comparable<N>> 
 		return payments;
 	}
 	
+	public M[] getPayments(M[] payments){
+		return payments;
+	}
+	
 	
 	public N[] getNewsLatters(List<BusinessType> newsLatterList){
 		return newsLatters;

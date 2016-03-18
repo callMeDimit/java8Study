@@ -21,8 +21,7 @@ import com.dimit.reflect.myannotations.Edu_Tiger;
 @Edu_General
 @Edu_Normal
 @Edu_Tiger
-public class Order
-		extends BaseOrder<Customer, Long> implements IOrder, Serializable {
+public class Order extends BaseOrder<Customer, Long> implements IOrder, Serializable {
 
 	private Long id;	
 	private Customer[] customers;
